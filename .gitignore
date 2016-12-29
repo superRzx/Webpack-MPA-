@@ -1,0 +1,6 @@
+.Ds_Store
+node_modules
+.temp
+.sass-cache
+.idea
+.psd
