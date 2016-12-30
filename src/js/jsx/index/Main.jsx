@@ -4,7 +4,7 @@ class Main extends Component {
   render() {
     return(
       <div>
-        12312addwdw
+        12312
       </div>
     )
   }

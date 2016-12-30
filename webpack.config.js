@@ -41,6 +41,13 @@ var config = {
           test: /\.(css|scss)$/,
           exclude: /node_modules/,
           loader: ExtractTextPlugin.extract('style', 'css', 'sass', 'postcss')
+        },
+        {
+          test: /\.(?:jpg|png|gif|svg)$/,
+          loaders: [
+            'url?limit=8000&name=[hash].[ext]',
+            'image-webpack'
+          ]
         }
       ]
     },
@@ -89,7 +96,8 @@ if (ENV) {
     hot: true,
     inline: true,
     progress: true,
-    colors: true
+    colors: true,
+    contentBase: './dist'
   }
 } else {
   // 编译前先清空dist目录
