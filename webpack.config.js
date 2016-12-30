@@ -51,6 +51,9 @@ var config = {
         }
       ]
     },
+    resolve: {
+      extensions: ['', '.js', '.jsx', '.scss', '.css']
+    },
     plugins: [
       new ExtractTextPlugin('[name].css')
     ],
