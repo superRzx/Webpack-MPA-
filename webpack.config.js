@@ -40,7 +40,7 @@ var config = {
         {
           test: /\.(css|scss)$/,
           exclude: /node_modules/,
-          loader: ExtractTextPlugin.extract('style', 'css', 'sass', 'postcss')
+          loader: ExtractTextPlugin.extract('style', 'css', 'postcss', 'sass')
         },
         {
           test: /\.(?:jpg|png|gif|svg)$/,
